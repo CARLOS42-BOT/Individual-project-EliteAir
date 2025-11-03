@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation bar */
+.navbar{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-left: 30px;
+padding-right: 40px;
+background: rgb(26, 26, 75);
+}
+
+.navbar h1{
+    color: rgb(236, 191, 115);
+}
+
+.navbar a{
+    margin-right: 15px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+.navbar a:hover{
+    color: moccasin;
+}
+
+h2{
+    color: white;
+    background: rgb(26, 26, 75);
+    padding-top: 20px;
+    padding-bottom: 20px;
+     padding-left: 10px; 
+    border-style: solid;
+}
+.back{
+    background:#fafafa;
+}
+
+/* form area */
+form{
+     padding: 20px;
+    font-size: larger;
+    font-weight: bold;
+    box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+}
+.form input, option, button{
+    padding-bottom: 20px;
+    border-radius: 5px;
+    padding: 15px;
+    border: 1px solid;
+
+}
+.form button{
+    color: black;
+    background-color: rgb(236, 191, 115);
+    cursor: pointer;
+}
+.label,.coach{
+    padding: 10px;
+    font-size: large;
+}
+
+.select,.op1,.op2,.op3{
+    font-weight: bold;
+    padding: 5px;
+    margin: auto;
+    border: 1px solid;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.from{
+    padding: 10px;
+    margin: auto;
+}
+
+/*  headings (h3) */
+.destinations{
+    font-size: x-large;
+    margin: 30px 20px;
+    color:black;
+}
+h5{
+    margin: 10px 20px;
+    font-size:large;
+}
+
+/* Trends */
+.Trends{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.Trends img{
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.Trend1,.Trend2{
+    border-radius: 20px;
+    border: 1px solid #fff;
+    flex-direction: column;
+    box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+}
+
+.Trends .money{
+    font-weight: bold;
+    font-size: medium;
+    padding: 8px;
+    margin-left: 10px;
+    float: left;
+}
+.Trend1 .city, .Trend2 .city{
+    font-weight: bold;
+    font-size: x-large;
+    margin-left: 10px ;
+    padding: 8px;
+}
+
+.Trends button{
+    padding: 10px;
+    float: right;
+    margin: 10px 10px;
+    background-color: rgb(236, 191, 115);
+    font-size: medium;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Deals */
+.Deals{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+.Deals1{
+    flex-direction: column;
+    box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    
+}
+.Deals1 p{
+    margin-left: 10px;
+    padding: 3px;
+}
+
+.city, .money{
+    font-weight: bold;
+    font-size: x-large;
+}
+.type{
+    font-weight: bold;
+}
+
+.Deals1 button, .money{
+    width: auto;
+    float: right;
+    padding: 10px;
+    margin: 10px 10px;
+    
+}
+.Deals1 button{
+    background-color: rgb(236, 191, 115);
+    font-size: medium;
+    border: none;
+    cursor: pointer;
+}
+
+.Deals img{
+    width: 100%;
+    border-top-left-radius:10px ;
+    border-top-right-radius: 10px;
+}
+
+/* Footer section */
+footer{
+    text-align: center;
+    background-color: rgb(26, 26, 75); 
+    padding: 20px;
+    
+
+}
+.footer h3,.foot{
+    font-size: larger;
+    padding: 8px 8px;
+    color: antiquewhite;
+
+}
+a{
+    color: blue;
+    padding: 5px;
+}
+
+/* Responsive for mobile devices */
+@media  (max-width:800px) {
+    *{
+        margin:auto;
+        box-sizing: border-box;
+
+    }
+   
+    .navbar div{
+        padding: 15px 15px;
+        display: flex;
+        margin-right: 8px;
+    }
+
+    .Trends ,.Deals{
+        display: grid;
+        grid-template-columns: 1fr;
+         width:100%; 
+         gap: 20px;
+    
+    }
+
+    footer{
+        width: 100%;
+    }
+
+    
+}
+

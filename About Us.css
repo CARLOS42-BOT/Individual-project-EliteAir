@@ -1,0 +1,72 @@
+*{
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/* navbar area */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    background: rgb(26, 26, 75);
+}
+.navbar h1{
+    color: rgb(236, 191, 115);
+    margin-right: 10px;
+}
+.navbar a{
+    text-decoration: none;
+    margin-right: 5px;
+    color: whitesmoke;
+
+}
+.navbar a:hover{
+    color: moccasin;
+}
+
+/* about us section */
+.US{
+     background-image: url('IMAGES/plane.jpg');
+
+}
+.US p{
+    font-size: large;
+}
+.about_us, .specials, .service, .mission{
+     padding: 10px; 
+}
+
+/* footer section */
+footer{
+    padding: 20px;
+    background-color: rgb(26, 26, 75);
+    
+}
+.footer h3, .foot{
+    font-size: larger;
+    color: antiquewhite;
+}
+a{
+    color: blue;
+    padding: 5px;
+}
+
+/* Responsive for mobile devices */
+@media (max-width:800px ) {
+    *{
+        margin: auto;
+        box-sizing: border-box;
+    }
+    .navbar div{
+        padding: 15px;
+        display: flex;
+        margin-right: 8px;
+    }
+    .navbar h1{
+        margin-right: 1px;
+    }
+    
+}
